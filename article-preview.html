@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>PREVIEW — MSI Situation Report</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;600;700;800&family=Barlow:wght@300;400;500&family=EB+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet"/>
+
+<!-- Preview badge -->
+<style>
+  .preview-banner{position:fixed;bottom:0;left:0;right:0;z-index:9999;background:var(--gold);color:#080e1c;font-family:'Barlow Condensed',sans-serif;font-size:11px;letter-spacing:3px;text-transform:uppercase;text-align:center;padding:8px;font-weight:700;}
+  .preview-banner span{opacity:.6;font-weight:400;margin-left:12px;}
+</style>
+
+<style>
+:root{
+  --navy:#080e1c; --navy2:#0d1828; --navy3:#0f2040;
+  --gold:#c9970a; --gold2:#fab811;
+  --cream:#f0ebe0; --text:#c8bfa8; --muted:#8a9bb0;
+  --nav-h:80px;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{background:var(--navy);color:var(--text);font-family:'Barlow',sans-serif;overflow-x:hidden;padding-bottom:40px;}
+
+nav{position:fixed;top:0;left:0;right:0;height:var(--nav-h);z-index:200;
+  display:flex;align-items:center;justify-content:space-between;padding:20px 48px;
+  background:rgba(8,14,28,.92);backdrop-filter:blur(14px);
+  border-bottom:1px solid rgba(15,32,64,.7);}
+.nav-logo{display:flex;align-items:center;gap:14px;text-decoration:none;}
+.nav-seal{width:40px;height:40px;border-radius:50%;overflow:hidden;border:1px solid rgba(201,151,10,.4);}
+.nav-seal img{width:100%;height:100%;object-fit:cover;}
+.nav-name{font-family:'Barlow Condensed',sans-serif;font-size:14px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--gold2);line-height:1.1;}
+.nav-sub{font-family:'Barlow Condensed',sans-serif;font-size:8px;letter-spacing:4px;text-transform:uppercase;color:rgba(250,184,17,.5);}
+.nav-links{display:flex;gap:36px;}
+.nav-link{font-family:'Barlow Condensed',sans-serif;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--muted);text-decoration:none;}
+.nav-link.active{color:var(--gold2);}
+@media(max-width:640px){nav{padding:16px 24px;} .nav-links{display:none;}}
+
+.tri-stripe{display:flex;height:6px;}
+.ts1{flex:4;background:#987F60;} .ts2{flex:2;background:#000;} .ts3{flex:4;background:#7E7E42;}
+.tri-stripe-sm{display:flex;height:3px;}
+.tri-stripe-sm .ts1{flex:4;background:#987F60;} .tri-stripe-sm .ts2{flex:2;background:#000;} .tri-stripe-sm .ts3{flex:4;background:#7E7E42;}
+
+.dispatch-subnav{background:var(--navy2);border-bottom:1px solid rgba(201,151,10,.15);
+  padding:0 72px;height:44px;display:flex;align-items:center;justify-content:space-between;}
+.dispatch-subnav a{font-family:'Barlow Condensed',sans-serif;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--gold);text-decoration:none;}
+.dispatch-subnav-center{font-family:'Barlow Condensed',sans-serif;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--muted);}
+@media(max-width:640px){.dispatch-subnav{padding:0 24px;} .dispatch-subnav-center{display:none;}}
+
+.article-hero{position:relative;height:72vh;min-height:480px;overflow:hidden;display:flex;align-items:flex-end;}
+.hero-bg-placeholder{position:absolute;inset:0;background:linear-gradient(135deg,#0f2040,#0d1828);}
+.hero-gradient{position:absolute;inset:0;background:linear-gradient(to top,rgba(8,14,28,1) 0%,rgba(8,14,28,.5) 40%,transparent 100%);}
+.hero-photo-note{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-family:'Barlow Condensed',sans-serif;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:rgba(201,151,10,.3);text-align:center;}
+.hero-content{position:relative;z-index:2;padding:0 72px 56px;width:100%;}
+.hero-meta-row{display:flex;align-items:center;gap:10px;margin-bottom:16px;flex-wrap:wrap;}
+.hero-badge{font-family:'Barlow Condensed',sans-serif;font-size:9px;letter-spacing:3px;text-transform:uppercase;border:1px solid rgba(201,151,10,.4);padding:4px 12px;color:var(--gold);}
+.hero-dot{width:4px;height:4px;border-radius:50%;background:var(--gold);opacity:.5;}
+.hero-date{font-family:'Barlow Condensed',sans-serif;font-size:9px;letter-spacing:3px;text-transform:uppercase;color:var(--muted);}
+.hero-title{font-family:'Barlow Condensed',sans-serif;font-size:clamp(32px,5.5vw,72px);font-weight:800;line-height:1.0;letter-spacing:.5px;color:#fff;max-width:900px;margin-bottom:18px;}
+.hero-sub{font-family:'EB Garamond',serif;font-size:18px;font-style:italic;color:var(--text);max-width:560px;line-height:1.6;margin-bottom:20px;}
+.hero-brand-tag{font-family:'Barlow Condensed',sans-serif;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);border:1px solid rgba(201,151,10,.25);padding:3px 9px;margin-right:6px;}
+.hero-stat{font-family:'Barlow Condensed',sans-serif;font-size:9px;letter-spacing:3px;text-transform:uppercase;color:var(--muted);margin-left:12px;}
+@media(max-width:640px){.hero-content{padding:0 24px 40px;} .article-hero{height:60vh;}}
+
+.article-body{max-width:740px;margin:0 auto;padding:72px 24px 80px;}
+
+.sec-label{font-family:'Barlow Condensed',sans-serif;font-size:10px;letter-spacing:4px;text-transform:uppercase;color:var(--gold);margin-bottom:8px;display:flex;align-items:center;gap:10px;margin-top:56px;}
+.sec-label::after{content:'';flex:1;height:1px;background:rgba(201,151,10,.2);}
+.sec-label:first-child{margin-top:0;}
+.sec-heading{font-family:'Barlow Condensed',sans-serif;font-size:clamp(22px,3.5vw,38px);font-weight:700;color:var(--cream);line-height:1.1;margin-bottom:28px;}
+
+.body-copy{font-family:'EB Garamond',serif;font-size:19px;color:var(--text);line-height:1.85;margin-bottom:22px;text-align:justify;}
+
+.pullquote{border-left:3px solid var(--gold);padding:18px 28px;margin:40px 0;background:rgba(201,151,10,.04);}
+.pullquote p{font-family:'EB Garamond',serif;font-size:22px;font-style:italic;color:var(--cream);line-height:1.6;}
+.pullquote cite{display:block;margin-top:10px;font-family:'Barlow Condensed',sans-serif;font-size:9px;letter-spacing:3px;text-transform:uppercase;color:var(--gold);}
+
+.article-photo-placeholder{width:100%;height:300px;background:rgba(201,151,10,.04);border:1px dashed rgba(201,151,10,.2);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;margin:36px 0;}
+.article-photo-placeholder span{font-family:'Barlow Condensed',sans-serif;font-size:9px;letter-spacing:3px;text-transform:uppercase;color:rgba(201,151,10,.4);}
+.article-photo-placeholder small{font-family:'Barlow',sans-serif;font-size:12px;color:rgba(138,155,176,.4);}
+
+.article-divider{height:1px;background:rgba(201,151,10,.15);margin:52px 0;}
+
+.brand-card{background:var(--navy2);border:1px solid rgba(201,151,10,.2);padding:32px;margin:40px 0;position:relative;overflow:hidden;}
+.brand-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--gold),transparent);}
+.brand-card-label{font-family:'Barlow Condensed',sans-serif;font-size:9px;letter-spacing:4px;text-transform:uppercase;color:var(--gold);margin-bottom:10px;}
+.brand-card-title{font-family:'Barlow Condensed',sans-serif;font-size:26px;font-weight:700;color:var(--cream);margin-bottom:14px;}
+.brand-card-body{font-family:'Barlow',sans-serif;font-size:14px;color:var(--muted);line-height:1.75;}
+.venue-details{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:18px;padding-top:18px;border-top:1px solid rgba(201,151,10,.12);}
+.venue-item-label{font-family:'Barlow Condensed',sans-serif;font-size:8px;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:3px;}
+.venue-item-val{font-family:'Barlow',sans-serif;font-size:13px;color:var(--muted);}
+
+.command{background:var(--navy2);border-top:1px solid rgba(201,151,10,.25);border-bottom:1px solid rgba(201,151,10,.25);padding:52px 40px;margin:56px -40px;text-align:center;}
+.command p{font-family:'EB Garamond',serif;font-size:clamp(17px,2.2vw,24px);font-style:italic;color:var(--cream);line-height:1.75;max-width:620px;margin:0 auto 20px;}
+.command-motto{font-family:'Barlow Condensed',sans-serif;font-size:11px;letter-spacing:5px;text-transform:uppercase;color:var(--gold);}
+@media(max-width:640px){.command{margin:56px -24px;padding:40px 24px;}}
+
+.cta-row{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:52px;}
+.btn-primary{display:inline-flex;align-items:center;gap:10px;font-family:'Barlow Condensed',sans-serif;font-size:10px;letter-spacing:4px;text-transform:uppercase;color:var(--gold);border:1px solid rgba(201,151,10,.45);padding:13px 28px;text-decoration:none;background:rgba(201,151,10,.05);transition:all .25s;}
+.btn-primary:hover{background:rgba(201,151,10,.13);}
+.btn-secondary{display:inline-flex;align-items:center;gap:10px;font-family:'Barlow Condensed',sans-serif;font-size:10px;letter-spacing:4px;text-transform:uppercase;color:var(--muted);border:1px solid rgba(138,155,176,.25);padding:13px 28px;text-decoration:none;}
+
+.sources{margin-top:52px;padding-top:28px;border-top:1px solid rgba(201,151,10,.12);}
+.sources-label{font-family:'Barlow Condensed',sans-serif;font-size:9px;letter-spacing:4px;text-transform:uppercase;color:var(--gold);margin-bottom:14px;}
+.sources ul{list-style:none;display:flex;flex-direction:column;gap:6px;}
+.sources li a{font-family:'Barlow',sans-serif;font-size:12px;color:var(--muted);text-decoration:none;opacity:.65;}
+
+footer{background:#040810;padding:40px 48px;text-align:center;border-top:1px solid rgba(201,151,10,.1);}
+footer p{font-family:'Barlow Condensed',sans-serif;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--muted);opacity:.5;}
+.gw{color:var(--gold);opacity:.8 !important;}
+</style>
+</head>
+<body>
+
+<!-- Preview Banner -->
+<div class="preview-banner">⬤ Local Preview — Article Template <span>Week 02 · The Archipelago Sound · Upload to GitHub to go live</span></div>
+
+<!-- NAV -->
+<nav>
+  <a class="nav-logo" href="https://molaysatrya.id">
+    <div class="nav-seal"><img src="https://molaysatrya.id/MOLAY_Roundel_CustodiServientem_NY.png" alt="MSI" onerror="this.style.display='none'"/></div>
+    <div><div class="nav-name">Molay Satrya Indonesia</div><div class="nav-sub">Group</div></div>
+  </a>
+  <div class="nav-links">
+    <a class="nav-link" href="#">About</a>
+    <a class="nav-link" href="#">Brands</a>
+    <a class="nav-link active" href="#">The Dispatch</a>
+    <a class="nav-link" href="#">Contact</a>
+  </div>
+</nav>
+
+<div style="margin-top:var(--nav-h);">
+<div class="tri-stripe"><div class="ts1"></div><div class="ts2"></div><div class="ts3"></div></div>
+
+<!-- SUBNAV -->
+<div class="dispatch-subnav">
+  <a href="#">← All Dispatches</a>
+  <span class="dispatch-subnav-center">The MSI Situation Report — Week 02, 2026</span>
+  <span></span>
+</div>
+
+<!-- HERO -->
+<div class="article-hero">
+  <div class="hero-bg-placeholder"></div>
+  <div class="hero-gradient"></div>
+  <div class="hero-photo-note">◈ Hero photo goes here<br>Upload to Cloudinary → paste URL in week-02.json</div>
+  <div class="hero-content">
+    <div class="hero-meta-row">
+      <span class="hero-badge">Customer Edition</span>
+      <div class="hero-dot"></div>
+      <span class="hero-badge">Week 02</span>
+      <div class="hero-dot"></div>
+      <span class="hero-date">07 April 2026</span>
+    </div>
+    <h1 class="hero-title">Where the Blues Found Its Southern Hemisphere Home</h1>
+    <p class="hero-sub">A refuge for the sharp; a headquarters for the weary.</p>
+    <div style="display:flex;align-items:center;flex-wrap:wrap;">
+      <span class="hero-brand-tag">The Gunslinger's Hop</span>
+      <span class="hero-brand-tag">Reclaimed by Molay</span>
+      <span class="hero-stat">9 min read</span>
+    </div>
+  </div>
+</div>
+
+<!-- ARTICLE BODY -->
+<div class="article-body">
+
+  <div class="sec-label">Section I  //  The Intel</div>
+  <div class="sec-heading">The Blues Was Never Meant to Stay in the Mississippi Delta</div>
+
+  <p class="body-copy">The blues was never meant to stay in the Mississippi Delta. It was always a migrant — a sound born of displacement, pressure, and the raw, unfiltered truth of human endurance. That it has found one of its most passionate sanctuaries in Jakarta, in a city of 35 million built upon the sediment of colonial power, Dutch trade, and Indonesian identity, should surprise no one who understands what the blues actually is.</p>
+
+  <p class="body-copy">In 2024, after a decade of silence, the Jakarta Blues Festival returned. Organised by InaBlues — the Indonesian Blues Association — the event bore a single, unambiguous theme: Keep the Blues Alive. It drew international legends to Indonesian soil and declared, without apology, that Jakarta intends to become Asia's blues capital. The declaration was not aspirational. It was a reconnaissance report from the front.</p>
+
+  <div class="pullquote">
+    <p>"The blues is the roots. Everything else is the fruits."</p>
+    <cite>— Robert Palmer, Deep Blues, 1981</cite>
+  </div>
+
+  <div class="article-photo-placeholder">
+    <span>◈ Photo Slot 1</span>
+    <small>GSH interior — upload to Cloudinary, paste URL in week-02.json → "hero_image"</small>
+  </div>
+
+  <p class="body-copy">The historical case for Indonesia's relationship with blues-adjacent music is compelling. The tradition of Keroncong — the mournful, colonial-era string music that developed in Batavia from Portuguese sailor songs — shares the structural DNA of blues: call and response, modal improvisation, and the channelling of grief into melody. When Gugun Blues Shelter takes the stage at Jalan Wijaya I and delivers a slide guitar line that bends into the humid night air, he is not imitating an American tradition. He is continuing one that was never entirely foreign.</p>
+
+  <p class="body-copy">Kebayoran Baru itself — designed in 1948 by native Indonesian architect M. Soesilo — is declared a Cagar Budaya, a protected cultural heritage zone. Its Art Deco bungalows, Jengki post-war houses, and wide tree-lined boulevards represent an architectural argument for Indonesian self-determination. The neighbourhood has withstood commercialisation pressure and the relentless march of glass towers. It remains, in both stone and spirit, resistant.</p>
+
+  <div class="article-divider"></div>
+
+  <div class="sec-label">Section II  //  Primary Response  //  The Gunslinger's Hop</div>
+  <div class="sec-heading">The Master Chamber: A Headquarters for the Disciplined Mind</div>
+
+  <div class="brand-card">
+    <div class="brand-card-label">Primary Deployment  //  The Gunslinger's Hop  //  Kebayoran Baru</div>
+    <div class="brand-card-title">The Stoic Veteran Meets the Blues Legend</div>
+    <div class="brand-card-body">Described by Timeout Jakarta as evoking 'a classic noir film' — a designation that understates the precision of its curation — GSH operates as something the Jakarta hospitality scene rarely produces: a venue with a point of view. Every element of the space, from the colonial-era detailing to the encyclopaedic whisky programme anchored by Eagle Rare Kentucky Bourbon, to the live music that builds after 2100h, is the product of a deliberate philosophy. You are not here to be entertained. You are here to think, to converse, and to listen.</div>
+    <div class="venue-details">
+      <div><div class="venue-item-label">Address</div><div class="venue-item-val">Jl. Wijaya I No. 73, Petogogan, Kebayoran Baru, Jakarta Selatan</div></div>
+      <div><div class="venue-item-label">Hours</div><div class="venue-item-val">Tue–Thu 5pm–12am · Fri–Sat 5pm–2am · Sun 3pm–10pm</div></div>
+      <div><div class="venue-item-label">Live Music</div><div class="venue-item-val">Gugun Blues Shelter (Sat) · Saturday Jazz · Sunday Sessions</div></div>
+      <div><div class="venue-item-label">Instagram</div><div class="venue-item-val">@gsh.jakarta</div></div>
+    </div>
+  </div>
+
+  <div class="pullquote">
+    <p>"A refuge for the sharp; a headquarters for the weary. Where strict discipline meets the raw honesty of the Blues."</p>
+    <cite>— The Gunslinger's Hop</cite>
+  </div>
+
+  <div class="article-photo-placeholder">
+    <span>◈ Photo Slot 2</span>
+    <small>GSH bar detail — whisky glass, brass, amber light</small>
+  </div>
+
+  <div class="article-divider"></div>
+
+  <div class="sec-label">Section III  //  Secondary Deployment  //  Reclaimed by Molay</div>
+  <div class="sec-heading">Why Teak Carries Sound Differently Than Anything Else</div>
+
+  <p class="body-copy">The acoustic performance of antique teak — specifically the centuries-old Javanese and Sumatran teak that Reclaimed by Molay sources exclusively from across the archipelago — is not a selling point. It is a physical fact. Dense-grained hardwood, aged beyond the point where synthetic materials can simulate its characteristics, absorbs and reflects sound in a manner that modern acousticians have spent decades trying to replicate in engineered composites. They have not succeeded.</p>
+
+  <div class="pullquote">
+    <p>"Hand-sourced from the archipelago. No synthetics, no shortcuts. Just the unyielding weight of authentic history."</p>
+    <cite>— Reclaimed by Molay</cite>
+  </div>
+
+  <div class="article-photo-placeholder">
+    <span>◈ Photo Slot 3</span>
+    <small>Reclaimed teak grain detail — workshop, natural light</small>
+  </div>
+
+  <div class="command">
+    <p>"The blues endures because it refuses to lie. The teak endures because it refuses to compromise. The Gunslinger's Hop endures because it understands that a room worth entering is a room built with conviction. One Vision. Integrated Disciplines."</p>
+    <div class="command-motto">Custodi Servientem</div>
+  </div>
+
+  <div class="cta-row">
+    <a class="btn-primary" href="#">↗ Enter the Outpost</a>
+    <a class="btn-primary" href="#">↗ Access the Archive</a>
+    <a class="btn-secondary" href="#">← All Dispatches</a>
+  </div>
+
+  <div class="sources">
+    <div class="sources-label">Intelligence Sources</div>
+    <ul>
+      <li><a href="#">Timeout Jakarta — The Gunslinger's Hop</a></li>
+      <li><a href="#">Indoparty — GSH Live Events 2025–2026</a></li>
+      <li><a href="#">Wikipedia — Kebayoran Baru Heritage District</a></li>
+      <li><a href="#">OpenEdition Journals — Colonial Architecture in Indonesia</a></li>
+      <li><a href="#">Observer ID — Jakarta Blues Festival 2024</a></li>
+    </ul>
+  </div>
+
+</div><!-- /article-body -->
+
+<div class="tri-stripe-sm"><div class="ts1"></div><div class="ts2"></div><div class="ts3"></div></div>
+
+<footer>
+  <p><span class="gw">Molay Satrya Indonesia Group</span> &nbsp;//&nbsp; One Vision. Integrated Disciplines. &nbsp;//&nbsp; <span class="gw">Custodi Servientem</span></p>
+  <p style="margin-top:10px;">© 2026 PT. Molay Satrya Indonesia. All rights reserved.</p>
+</footer>
+
+</div>
+</body>
+</html>
