@@ -10,7 +10,7 @@
   "subheadline": "Jakarta does not forgive the conspicuous.",
   "hero_image": "",
   "read_time": "8",
-  "next_slug": "week-02-archipelago-sound",
+  "next_slug": "",
   "sections": [
     {
       "type": "section-header",
@@ -32,8 +32,8 @@
     },
     {
       "type": "photo",
-      "url": "",
-      "caption": "Jakarta Metropolitan Corridor — recommended: high-contrast urban scene, Sudirman or Thamrin"
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Bundaran_Hotel_Indonesia_%282025%29.jpg",
+      "caption": "Bundaran Hotel Indonesia, Jakarta — the metropolitan pulse of the city. Photo: Medelam / CC BY 4.0"
     },
     {
       "type": "body",
@@ -57,12 +57,12 @@
     },
     {
       "type": "body",
-      "text": "The fabric is a ripstop-reinforced technical weave treated for moisture transport in high-humidity tropical environments — a non-negotiable requirement in a climate where the Wet Bulb temperature in urban Jakarta regularly exceeds 32°C. The cut is civilian. The construction is not. Reinforced stress points at the shoulder harness channels, low-profile articulated elbows, and a concealed chest utility panel sit beneath an outer profile that, to the untrained eye, reads as nothing more than a well-made field shirt."
+      "text": "The fabric is a denim 2 way stretch — engineered for mobility in high-humidity tropical environments, a non-negotiable requirement in a climate where the Wet Bulb temperature in urban Jakarta regularly exceeds 32°C. The cut is civilian. The construction is not. Reinforced stress points at the shoulder harness channels, low-profile articulated elbows, and a concealed chest utility panel sit beneath an outer profile that, to the untrained eye, reads as nothing more than a well-made field shirt."
     },
     {
       "type": "photo",
-      "url": "",
-      "caption": "Molay Tactical Intruder Shirt — fabric and seam detail"
+      "url": "https://res.cloudinary.com/dp3v9drdx/image/upload/v1774962703/IMG_4140_vrhrz8.jpg",
+      "caption": "Molay Tactical Intruder Shirt — denim 2 way stretch, engineered for the urban operator"
     },
     {
       "type": "pullquote",
@@ -85,8 +85,8 @@
     },
     {
       "type": "photo",
-      "url": "",
-      "caption": "Defensa Coffee Outpost — colonial interior, Jakarta Selatan"
+      "url": "https://res.cloudinary.com/dp3v9drdx/image/upload/v1774962706/IMG_1751_kdpmwi.jpg",
+      "caption": "Defensa Coffee Outpost — colonial-modern trade station, Jakarta Selatan"
     },
     {
       "type": "command",
@@ -97,7 +97,7 @@
       "type": "cta",
       "buttons": [
         { "label": "Procure the Gear", "url": "https://www.molaytactical.com", "external": true },
-        { "label": "Enter the Outpost", "url": "https://molaysatrya.id/#contact", "external": false },
+        { "label": "Enter the Outpost", "url": "https://instagram.com/defensa.co", "external": true },
         { "label": "All Dispatches", "url": "index.html", "external": false }
       ]
     },
@@ -108,7 +108,8 @@
         { "label": "5.11 Tactical Community — What is a Gray Man?", "url": "https://www.511tactical.com/community/what-is-a-gray-man/" },
         { "label": "St. Augustine's University — Indonesia's Elite Police Units", "url": "https://explore.st-aug.edu/exp/indonesias-elite-police-units-the-silent-shield-behind-national-security" },
         { "label": "Globe Newswire — Ballistic Protective Gear Research Report 2026", "url": "https://www.globenewswire.com/news-release/2026/01/22/3223796/0/en/Ballistic-Protective-Gear-Research-Report-2026-6-25-Bn-Market-Opportunities-Trends-Competitive-Landscape-Strategies-and-Forecasts-2020-2025-2025-2030F-2035F.html" },
-        { "label": "Technavio — Tactical and Outdoor Clothing Market 2026–2030", "url": "https://www.technavio.com/report/tactical-and-outdoor-clothing-market-industry-analysis" }
+        { "label": "Technavio — Tactical and Outdoor Clothing Market 2026–2030", "url": "https://www.technavio.com/report/tactical-and-outdoor-clothing-market-industry-analysis" },
+        { "label": "Photo: Bundaran Hotel Indonesia (2025) — Medelam / Wikimedia Commons CC BY 4.0", "url": "https://commons.wikimedia.org/wiki/File:Bundaran_Hotel_Indonesia_(2025).jpg" }
       ]
     }
   ]
