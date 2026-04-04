@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>MSI SitRep W02 — The Gunslinger's Hop</title>
+<!-- Google Analytics GA4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3GDV85S0EL"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-3GDV85S0EL');
+</script>
+<!-- Meta Pixel -->
+<script>
+  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+  n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}
+  (window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '568967256943523');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=568967256943523&ev=PageView&noscript=1"/></noscript>
+<link rel="icon" type="image/png" href="https://molaysatrya.id/MOLAY_Roundel_CustodiServientem_NY.png"/>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500;600;700&family=Barlow:wght@300;400;500;600&family=EB+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet"/>
+<style>
+  :root{--navy:#080e1c;--navy2:#0d1828;--gold:#c9970a;--gold2:#fab811;--cream:#f0ebe0;--text:#c8bfa8;--brown:#4a3c28;--nav-h:80px;--amber:#8B4513;}
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{background:var(--navy);color:var(--cream);font-family:'Barlow',sans-serif;line-height:1.7;}
+
+  /* NAV */
+  nav{position:fixed;top:0;left:0;right:0;height:var(--nav-h);background:rgba(8,14,28,0.92);backdrop-filter:blur(14px);display:flex;align-items:center;justify-content:space-between;padding:0 48px;border-bottom:1px solid rgba(201,151,10,0.2);z-index:100;}
+  .nav-brand{display:flex;align-items:center;gap:14px;}
+  .nav-seal{width:40px;height:40px;border-radius:50%;border:1px solid rgba(201,151,10,.5);display:flex;align-items:center;justify-content:center;font-family:'Barlow Condensed',sans-serif;font-size:10px;font-weight:700;color:var(--gold);}
+  .nav-text .name{display:block;font-family:'Barlow Condensed',sans-serif;font-size:13px;font-weight:700;letter-spacing:3px;color:var(--cream);text-transform:uppercase;}
+  .nav-text .tagline{display:block;font-family:'Barlow Condensed',sans-serif;font-size:9px;letter-spacing:3px;color:var(--gold);text-transform:uppercase;}
+  .nav-links{display:flex;gap:32px;list-style:none;}
+  .nav-links a{font-family:'Barlow Condensed',sans-serif;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--text);text-decoration:none;transition:color .2s;}
+  .nav-links a:hover,.nav-links a.active{color:var(--gold);}
+
+  /* DISPATCH SUBNAV */
+  .dispatch-nav{background:var(--navy2);border-top:1px solid rgba(201,151,10,.15);border-bottom:1px solid rgba(201,151,10,.15);padding:20px 72px;display:flex;justify-content:space-between;align-items:center;margin-top:var(--nav-h);}
+  .dispatch-nav a{font-family:'Barlow Condensed',sans-serif;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--gold);text-decoration:none;}
+  .dispatch-nav .center{font-family:'Barlow Condensed',sans-serif;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--text);}
+
+  /* HERO — warmer, moodier for GSH */
+  .article-hero{position:relative;height:75vh;min-height:520px;overflow:hidden;display:flex;align-items:flex-end;}
+  .hero-img{position:absolute;inset:0;background:url('https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=1600&q=80') center/cover no-repeat;filter:brightness(0.45) saturate(0.8);}
+  .hero-gradient{position:absolute;inset:0;background:linear-gradient(to top,rgba(8,14,28,1) 0%,rgba(8,14,28,0.6) 45%,rgba(30,15,5,0.3) 100%);}
+  .hero-amber{position:absolute;inset:0;background:radial-gradient(ellipse at 70% 40%,rgba(139,69,19,.18) 0%,transparent 65%);}
+  .hero-webbing{position:absolute;top:0;left:0;right:0;height:6px;background:repeating-linear-gradient(90deg,#987F60 0 4px,#000 4px 6px,#7E7E42 6px 10px);}
+  .hero-content{position:relative;z-index:2;padding:0 72px 60px;}
+  .hero-label{font-family:'Barlow Condensed',sans-serif;font-size:11px;letter-spacing:4px;text-transform:uppercase;color:var(--gold);margin-bottom:16px;}
+  .hero-label span{border:1px solid rgba(201,151,10,.4);padding:4px 12px;margin-right:10px;}
+  .hero-title{font-family:'Barlow Condensed',sans-serif;font-size:clamp(36px,6vw,78px);font-weight:700;line-height:1.0;letter-spacing:1px;color:#fff;max-width:860px;margin-bottom:20px;}
+  .hero-sub{font-family:'EB Garamond',serif;font-size:17px;font-style:italic;color:var(--text);max-width:600px;line-height:1.6;}
+  .hero-meta{display:flex;align-items:center;gap:24px;margin-top:24px;}
+  .hero-meta span{font-family:'Barlow Condensed',sans-serif;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--text);}
+  .hero-meta .dot{width:4px;height:4px;border-radius:50%;background:var(--gold);opacity:.6;}
+
+  /* CONTENT */
+  .article-wrap{max-width:760px;margin:0 auto;padding:80px 24px;}
+  .section-tag{font-family:'Barlow Condensed',sans-serif;font-size:10px;letter-spacing:4px;text-transform:uppercase;color:var(--gold);margin-bottom:8px;display:flex;align-items:center;gap:10px;}
+  .section-tag::after{content:'';flex:1;height:1px;background:rgba(201,151,10,.25);}
+  .section-heading{font-family:'Barlow Condensed',sans-serif;font-size:clamp(24px,4vw,42px);font-weight:700;color:var(--cream);line-height:1.1;margin-bottom:28px;}
+  .body-copy{font-family:'EB Garamond',serif;font-size:19px;color:var(--text);line-height:1.85;margin-bottom:24px;text-align:justify;}
+  .pullquote{border-left:3px solid var(--gold);padding:20px 32px;margin:44px 0;background:rgba(201,151,10,.04);}
+  .pullquote p{font-family:'EB Garamond',serif;font-size:23px;font-style:italic;color:var(--cream);line-height:1.6;}
+  .pullquote cite{display:block;margin-top:12px;font-family:'Barlow Condensed',sans-serif;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--gold);}
+  .divider{height:1px;background:rgba(201,151,10,.18);margin:60px 0;}
+
+  /* PHOTO SLOTS */
+  .photo-note{background:rgba(201,151,10,.05);border:1px dashed rgba(201,151,10,.25);padding:8px 16px;margin-bottom:12px;font-family:'Barlow Condensed',sans-serif;font-size:10px;letter-spacing:2px;color:var(--gold);text-transform:uppercase;text-align:center;}
+  .photo-placeholder{width:100%;height:340px;background:rgba(139,69,19,.05);border:1px dashed rgba(201,151,10,.2);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;margin:36px 0;}
+  .photo-placeholder .icon{font-size:28px;opacity:.35;}
+  .photo-placeholder p{font-family:'Barlow Condensed',sans-serif;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--gold);opacity:.55;}
+  .photo-placeholder small{font-family:'Barlow',sans-serif;font-size:12px;color:var(--text);opacity:.4;text-align:center;max-width:320px;}
+
+  /* VENUE CARD */
+  .venue-card{background:rgba(13,24,40,.9);border:1px solid rgba(201,151,10,.25);margin:48px 0;position:relative;overflow:hidden;}
+  .venue-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--gold),var(--amber),transparent);}
+  .venue-card-inner{padding:36px;}
+  .venue-card-label{font-family:'Barlow Condensed',sans-serif;font-size:10px;letter-spacing:4px;text-transform:uppercase;color:var(--gold);margin-bottom:10px;}
+  .venue-card-title{font-family:'Barlow Condensed',sans-serif;font-size:30px;font-weight:700;color:var(--cream);margin-bottom:6px;}
+  .venue-card-sub{font-family:'EB Garamond',serif;font-size:15px;font-style:italic;color:var(--gold);margin-bottom:18px;}
+  .venue-details{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:20px;padding-top:20px;border-top:1px solid rgba(201,151,10,.15);}
+  .venue-detail-item .label{font-family:'Barlow Condensed',sans-serif;font-size:9px;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:4px;}
+  .venue-detail-item .val{font-family:'Barlow',sans-serif;font-size:13px;color:var(--text);}
+
+  /* RECLAIMED CARD */
+  .reclaimed-card{background:rgba(74,60,40,.12);border:1px solid rgba(201,151,10,.2);padding:36px;margin:48px 0;position:relative;}
+  .reclaimed-card::before{content:'';position:absolute;top:0;left:0;bottom:0;width:3px;background:linear-gradient(to bottom,var(--gold),transparent);}
+  .reclaimed-card-label{font-family:'Barlow Condensed',sans-serif;font-size:10px;letter-spacing:4px;text-transform:uppercase;color:var(--gold);margin-bottom:12px;}
+  .reclaimed-card-title{font-family:'Barlow Condensed',sans-serif;font-size:28px;font-weight:700;color:var(--cream);margin-bottom:14px;}
+  .reclaimed-card p{font-family:'Barlow',sans-serif;font-size:14px;color:var(--text);line-height:1.7;}
+
+  /* COMMAND */
+  .command{background:var(--navy2);border-top:1px solid rgba(201,151,10,.3);border-bottom:1px solid rgba(201,151,10,.3);padding:64px 48px;margin:60px -48px;text-align:center;}
+  .command p{font-family:'EB Garamond',serif;font-size:clamp(18px,2.5vw,28px);font-style:italic;color:var(--cream);line-height:1.7;max-width:680px;margin:0 auto 24px;}
+  .command .motto{font-family:'Barlow Condensed',sans-serif;font-size:12px;letter-spacing:5px;text-transform:uppercase;color:var(--gold);}
+
+  /* CTA */
+  .cta-row{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-top:56px;}
+  .btn-primary{display:inline-flex;align-items:center;gap:10px;font-family:'Barlow Condensed',sans-serif;font-size:10px;letter-spacing:4px;text-transform:uppercase;color:var(--gold);border:1px solid rgba(201,151,10,.5);padding:14px 30px;text-decoration:none;background:rgba(201,151,10,.06);transition:all .25s;}
+  .btn-primary:hover{background:rgba(201,151,10,.14);}
+  .btn-secondary{display:inline-flex;align-items:center;gap:10px;font-family:'Barlow Condensed',sans-serif;font-size:10px;letter-spacing:4px;text-transform:uppercase;color:var(--text);border:1px solid rgba(201,151,10,.2);padding:14px 30px;text-decoration:none;transition:all .25s;}
+
+  /* SOURCES */
+  .sources{margin-top:60px;padding-top:32px;border-top:1px solid rgba(201,151,10,.12);}
+  .sources h4{font-family:'Barlow Condensed',sans-serif;font-size:10px;letter-spacing:4px;text-transform:uppercase;color:var(--gold);margin-bottom:16px;}
+  .sources ul{list-style:none;display:flex;flex-direction:column;gap:6px;}
+  .sources li a{font-family:'Barlow',sans-serif;font-size:12px;color:var(--text);text-decoration:none;opacity:.65;transition:opacity .2s;}
+  .sources li a:hover{opacity:1;color:var(--gold);}
+
+  /* FOOTER */
+  footer{background:#040810;padding:48px;text-align:center;border-top:1px solid rgba(201,151,10,.1);}
+  footer p{font-family:'Barlow Condensed',sans-serif;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--text);opacity:.5;}
+  .gold-word{color:var(--gold);opacity:.8;}
+  .mockup-badge{position:fixed;bottom:24px;right:24px;background:var(--gold);color:var(--navy);font-family:'Barlow Condensed',sans-serif;font-size:10px;letter-spacing:3px;text-transform:uppercase;padding:8px 16px;z-index:999;font-weight:700;}
+</style>
+</head>
+<body>
+
+<div class="mockup-badge">⬤ Mockup Preview</div>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-brand">
+    <div class="nav-seal"><img src="https://molaysatrya.id/MOLAY_Roundel_CustodiServientem_NY.png" alt="MSI" style="width:100%;height:100%;object-fit:cover;"/></div>
+    <div class="nav-text">
+      <span class="name">Molay Satrya Indonesia</span>
+      <span class="tagline">One Vision. Integrated Disciplines.</span>
+    </div>
+  </div>
+  <ul class="nav-links">
+    <li><a href="#">About</a></li>
+    <li><a href="#">Brands</a></li>
+    <li><a href="#" class="active">The Dispatch</a></li>
+    <li><a href="#">Compliance</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</nav>
+
+<div class="dispatch-nav">
+  <a href="index.html">← All Dispatches</a>
+  <span class="center">The MSI Situation Report — Vol. 02, 2026</span>
+  <a href="index.html">← All Dispatches</a>
+</div>
+
+<!-- HERO -->
+<div class="article-hero">
+  <div class="hero-img"></div>
+  <div class="hero-gradient"></div>
+  <div class="hero-amber"></div>
+  <div class="hero-webbing"></div>
+  <div class="hero-content">
+    <div class="hero-label">
+      <span>Customer Edition</span>
+      <span>07 April 2026</span>
+      <span>Theme: The Archipelago Sound</span>
+    </div>
+    <h1 class="hero-title">Where the Blues Found<br>Its Southern Hemisphere Home</h1>
+    <p class="hero-sub">"A refuge for the sharp; a headquarters for the weary. Where strict discipline meets the raw honesty of the Blues."</p>
+    <div class="hero-meta">
+      <span>MSI Group Editorial</span>
+      <div class="dot"></div>
+      <span>9 Min Read</span>
+      <div class="dot"></div>
+      <span>The Gunslinger's Hop // Reclaimed by Molay</span>
+    </div>
+  </div>
+</div>
+
+<!-- ARTICLE BODY -->
+<div class="article-wrap">
+
+  <!-- SECTION I -->
+  <div class="section-tag">Section I &nbsp;//&nbsp; The Intel</div>
+  <h2 class="section-heading">The Archipelago Sound:<br>A Blues Scene That Was Always Here</h2>
+
+  <p class="body-copy">The blues was never meant to stay in the Mississippi Delta. It was always a migrant — a sound born of displacement, pressure, and the raw, unfiltered truth of human endurance. That it has found one of its most passionate sanctuaries in Jakarta, in a city of 35 million built upon the sediment of colonial power, Dutch trade, and Indonesian identity, should surprise no one who understands what the blues actually is.</p>
+
+  <p class="body-copy">In 2024, after a decade of silence, the Jakarta Blues Festival returned. Organised by InaBlues — the Indonesian Blues Association — the event bore a single, unambiguous theme: <em>Keep the Blues Alive.</em> International legends performed on Indonesian soil. The declaration was not aspirational. It was a reconnaissance report from the front.</p>
+
+  <div class="pullquote">
+    <p>"The blues is the roots. Everything else is the fruits."</p>
+    <cite>— Robert Palmer, Deep Blues, 1981</cite>
+  </div>
+
+  <!-- PHOTO SLOT 1 -->
+  <div class="photo-note">📷 Photo Slot 1 — Recommended: GSH interior, warm amber lighting, vintage bar atmosphere. Source: GSH Brand Photography</div>
+  <div class="photo-placeholder">
+    <div class="icon">◈</div>
+    <p>GSH Interior / Atmosphere Shot</p>
+    <small>Recommended: 1600 × 900px — Moody amber, vintage bar, live performer silhouette. Replace with actual GSH photography.</small>
+  </div>
+
+  <p class="body-copy">The historical case for Indonesia's relationship with blues-adjacent music is compelling. The tradition of Keroncong — the mournful, colonial-era string music that developed in Batavia from Portuguese sailor songs — shares the structural DNA of blues: call and response, modal improvisation, and the channelling of grief into melody. When Gugun Blues Shelter takes the stage in Kebayoran Baru and delivers a slide guitar line into the humid night air, he is not imitating an American tradition. He is continuing one that was never entirely foreign.</p>
+
+  <p class="body-copy">Kebayoran Baru itself — designed in 1948 by native Indonesian architect M. Soesilo as Indonesia's first post-independence garden city — is declared a Cagar Budaya, a protected cultural heritage zone. Its Art Deco bungalows, Jengki post-war houses, and wide tree-lined boulevards represent an architectural argument for Indonesian self-determination. The neighbourhood has withstood commercialisation pressure and the relentless march of glass towers. It remains, in both stone and spirit, resistant.</p>
+
+  <div class="divider"></div>
+
+  <!-- SECTION II: GSH -->
+  <div class="section-tag">Section II &nbsp;//&nbsp; Primary Response &nbsp;//&nbsp; The Gunslinger's Hop</div>
+  <h2 class="section-heading">The Master Chamber:<br>A Headquarters for the Disciplined Mind</h2>
+
+  <!-- VENUE CARD -->
+  <div class="venue-card">
+    <div class="venue-card-inner">
+      <div class="venue-card-label">Primary Deployment // The Gunslinger's Hop // Kebayoran Baru</div>
+      <div class="venue-card-title">The Stoic Veteran Meets the Blues Legend</div>
+      <div class="venue-card-sub">"A vintage-themed colonial sanctuary evoking a classic noir film." — Timeout Jakarta</div>
+      <div class="venue-details">
+        <div class="venue-detail-item">
+          <div class="label">Address</div>
+          <div class="val">Jl. Wijaya I No. 73, Petogogan<br>Kebayoran Baru, Jakarta Selatan</div>
+        </div>
+        <div class="venue-detail-item">
+          <div class="label">Hours</div>
+          <div class="val">Tue–Thu: 5pm–12am<br>Fri–Sat: 5pm–2am<br>Sun: 3pm–10pm</div>
+        </div>
+        <div class="venue-detail-item">
+          <div class="label">Live Music</div>
+          <div class="val">Gugun Blues Shelter (Sat)<br>Saturday Jazz, Sunday Sessions</div>
+        </div>
+        <div class="venue-detail-item">
+          <div class="label">Instagram</div>
+          <div class="val">@gsh.jakarta</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <p class="body-copy">At Jalan Wijaya I No. 73, in the heart of Kebayoran Baru's protected residential corridor, stands The Gunslinger's Hop. It does not advertise itself loudly. It does not need to. The kind of people who find it were already looking for exactly this.</p>
+
+  <div class="pullquote">
+    <p>"A refuge for the sharp; a headquarters for the weary. Where strict discipline meets the raw honesty of the Blues."</p>
+    <cite>— The Gunslinger's Hop</cite>
+  </div>
+
+  <!-- PHOTO SLOT 2 -->
+  <div class="photo-note">📷 Photo Slot 2 — Recommended: Close-up of GSH bar — whisky glass, brass detail, amber bokeh. Source: Brand Photography</div>
+  <div class="photo-placeholder">
+    <div class="icon">◈</div>
+    <p>Whisky / Bar Detail Shot</p>
+    <small>Recommended: 1200 × 800px — Eagle Rare label, condensation on glass, moody backbar lighting</small>
+  </div>
+
+  <p class="body-copy">The GSH music programme is not ambient — it is the point. Regular performances by Gugun Blues Shelter, Indonesia's finest blues unit, anchor the Saturday programme. The bar's signature Derawan cocktail — zesty lemon balanced with fresh coconut syrup, named for East Kalimantan's famed diving waters — is the kind of drink that tells you where it comes from and makes no apology for it.</p>
+
+  <div class="divider"></div>
+
+  <!-- SECTION III: RECLAIMED -->
+  <div class="section-tag">Section III &nbsp;//&nbsp; Secondary Deployment &nbsp;//&nbsp; Reclaimed by Molay</div>
+  <h2 class="section-heading">Why Teak Carries Sound<br>Differently Than Anything Else</h2>
+
+  <div class="reclaimed-card">
+    <div class="reclaimed-card-label">Secondary Deployment // Reclaimed by Molay // The Archipelago</div>
+    <div class="reclaimed-card-title">The Master Craftsman / The Archivist</div>
+    <p>The acoustic performance of centuries-old Javanese and Sumatran teak — hand-sourced exclusively from across the archipelago — is not a selling point. It is a physical fact. Dense-grained hardwood, aged beyond the point where synthetic materials can simulate its characteristics, absorbs and reflects sound in a manner that modern acousticians have spent decades trying to replicate. They have not succeeded. This is why the finest recording studios are built with old wood. When you commission Reclaimed by Molay, you are not buying furniture. You are building an environment that carries acoustic and material honesty.</p>
+  </div>
+
+  <!-- PHOTO SLOT 3 -->
+  <div class="photo-note">📷 Photo Slot 3 — Recommended: Reclaimed by Molay teak detail — grain, patina, chisel marks. Source: Product / Workshop Photography</div>
+  <div class="photo-placeholder">
+    <div class="icon">◈</div>
+    <p>Teak Material / Workshop Detail</p>
+    <small>Recommended: 1400 × 700px — Close macro of antique teak grain, warm natural light, workshop setting</small>
+  </div>
+
+  <!-- COMMAND STATEMENT -->
+  <div class="command">
+    <p>"The blues endures because it refuses to lie. The teak endures because it refuses to compromise. The Gunslinger's Hop endures because it understands that a room worth entering is a room built with conviction."</p>
+    <div class="motto">One Vision. Integrated Disciplines. — Custodi Servientem</div>
+  </div>
+
+  <!-- CTA -->
+  <div class="cta-row">
+    <a href="#" class="btn-primary">↗ Enter the Outpost</a>
+    <a href="#" class="btn-primary">→ Access the Archive</a>
+    <a href="MSI_SitRep_ArticlePage_Mockup.html" class="btn-secondary">← Previous Issue</a>
+  </div>
+
+  <!-- SOURCES -->
+  <div class="sources">
+    <h4>Intelligence Sources</h4>
+    <ul>
+      <li><a href="https://www.timeout.com/jakarta/bars-and-pubs/the-gunslingers-hop">Timeout Jakarta — The Gunslinger's Hop</a></li>
+      <li><a href="https://www.indoparty.id/group/The-Gunslingers-Hop-Jakarta-Kebayoran-Baru.html">Indoparty — GSH Live Events 2025–2026</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/Kebayoran_Baru">Wikipedia — Kebayoran Baru Heritage District</a></li>
+      <li><a href="https://journals.openedition.org/abe/372?lang=en">OpenEdition Journals — Colonial Architecture in Indonesia</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/Java_Jazz_Festival">Java Jazz Festival 2026 — Official Info</a></li>
+    </ul>
+  </div>
+
+</div>
+
+<footer>
+  <p><span class="gold-word">Molay Satrya Indonesia Group</span> &nbsp;//&nbsp; One Vision. Integrated Disciplines. &nbsp;//&nbsp; <span class="gold-word">Custodi Servientem</span></p>
+  <p style="margin-top:12px;">© 2026 PT Molay Satrya Indonesia. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

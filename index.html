@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>The MSI Situation Report — All Dispatches</title>
+<!-- Google Analytics GA4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3GDV85S0EL"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-3GDV85S0EL');
+</script>
+<!-- Meta Pixel -->
+<script>
+  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+  n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}
+  (window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '568967256943523');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=568967256943523&ev=PageView&noscript=1"/></noscript>
+<link rel="icon" type="image/png" href="https://molaysatrya.id/MOLAY_Roundel_CustodiServientem_NY.png"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500;600;700;800&family=Barlow:wght@300;400;500;600&family=EB+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet"/>
+<style>
+  :root{--navy:#080e1c;--navy2:#0d1828;--navy3:#0f2040;--gold:#c9970a;--gold2:#fab811;--cream:#f0ebe0;--text:#c8bfa8;--muted:#8a9bb0;--nav-h:80px;}
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{background:var(--navy);color:var(--cream);font-family:'Barlow',sans-serif;line-height:1.7;}
+
+  /* ── NAV ── */
+  nav{position:fixed;top:0;left:0;right:0;height:var(--nav-h);z-index:200;display:flex;align-items:center;justify-content:space-between;padding:20px 48px;background:rgba(8,14,28,.92);backdrop-filter:blur(14px);border-bottom:1px solid rgba(15,32,64,.7);}
+  .nav-logo{display:flex;align-items:center;gap:14px;text-decoration:none;}
+  .nav-seal{width:40px;height:40px;border-radius:50%;overflow:hidden;border:1px solid rgba(201,151,10,.4);}
+  .nav-seal img{width:100%;height:100%;object-fit:cover;}
+  .nav-name{font-family:'Barlow Condensed',sans-serif;font-size:14px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--gold2);line-height:1.1;}
+  .nav-sub{font-family:'Barlow Condensed',sans-serif;font-size:8px;letter-spacing:4px;text-transform:uppercase;color:rgba(250,184,17,.5);}
+  .nav-links{display:flex;gap:36px;}
+  .nav-link{font-family:'Barlow Condensed',sans-serif;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--muted);text-decoration:none;transition:color .2s;}
+  .nav-link:hover,.nav-link.active{color:var(--gold2);}
+  @media(max-width:640px){nav{padding:16px 24px;} .nav-links{display:none;}}
+
+  /* ── TRI STRIPE ── */
+  .tri-stripe{display:flex;height:6px;}
+  .ts1{flex:4;background:#987F60;} .ts2{flex:2;background:#000;} .ts3{flex:4;background:#7E7E42;}
+
+  /* ── HERO ── */
+  .archive-hero{padding:72px 72px 56px;background:var(--navy2);border-bottom:1px solid rgba(201,151,10,.15);}
+  @media(max-width:640px){.archive-hero{padding:56px 24px 48px;}}
+  .archive-label{font-family:'Barlow Condensed',sans-serif;font-size:9px;letter-spacing:5px;text-transform:uppercase;color:var(--gold);opacity:.7;margin-bottom:16px;display:flex;align-items:center;gap:12px;}
+  .archive-label::after{content:'';width:32px;height:1px;background:rgba(201,151,10,.3);}
+  .archive-title{font-family:'Barlow Condensed',sans-serif;font-size:clamp(36px,5vw,68px);font-weight:800;text-transform:uppercase;color:#fff;line-height:1.0;margin-bottom:14px;}
+  .archive-title span{color:var(--gold2);}
+  .archive-sub{font-family:'EB Garamond',serif;font-size:17px;font-style:italic;color:var(--muted);max-width:540px;line-height:1.7;}
+  .archive-stats{display:flex;gap:40px;margin-top:32px;}
+  .stat-num{font-family:'Barlow Condensed',sans-serif;font-size:32px;font-weight:700;color:var(--gold);}
+  .stat-label{font-family:'Barlow Condensed',sans-serif;font-size:9px;letter-spacing:3px;text-transform:uppercase;color:var(--muted);}
+
+  /* ── GRID ── */
+  .archive-body{max-width:1200px;margin:0 auto;padding:64px 48px 80px;}
+  @media(max-width:640px){.archive-body{padding:40px 24px;}}
+  .archive-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:2px;}
+  @media(max-width:640px){.archive-grid{grid-template-columns:1fr;}}
+
+  /* ── CARD ── */
+  .dispatch-card{background:var(--navy2);display:flex;flex-direction:column;border-top:2px solid transparent;transition:border-color .25s;text-decoration:none;color:inherit;cursor:pointer;}
+  .dispatch-card:hover{border-top-color:var(--gold);}
+  .card-img{width:100%;height:200px;object-fit:cover;display:block;filter:brightness(.85);}
+  .card-body{padding:28px;flex:1;display:flex;flex-direction:column;}
+  .card-meta{display:flex;align-items:center;gap:8px;margin-bottom:12px;flex-wrap:wrap;}
+  .card-edition{font-family:'Barlow Condensed',sans-serif;font-size:8px;letter-spacing:3px;text-transform:uppercase;color:var(--gold);border:1px solid rgba(201,151,10,.3);padding:3px 8px;}
+  .card-date{font-family:'Barlow Condensed',sans-serif;font-size:8px;letter-spacing:2px;text-transform:uppercase;color:var(--muted);}
+  .card-theme{font-family:'Barlow Condensed',sans-serif;font-size:8px;letter-spacing:2px;text-transform:uppercase;color:var(--muted);opacity:.7;margin-bottom:10px;}
+  .card-title{font-family:'Barlow Condensed',sans-serif;font-size:clamp(17px,1.8vw,21px);font-weight:700;text-transform:uppercase;color:#fff;line-height:1.15;margin-bottom:10px;}
+  .card-brands{display:flex;gap:5px;flex-wrap:wrap;margin-bottom:14px;}
+  .card-brand{font-family:'Barlow Condensed',sans-serif;font-size:7px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);border:1px solid rgba(201,151,10,.2);padding:2px 7px;}
+  .card-excerpt{font-family:'Barlow',sans-serif;font-size:13px;color:var(--muted);line-height:1.65;flex:1;margin-bottom:20px;}
+  .card-cta{font-family:'Barlow Condensed',sans-serif;font-size:9px;letter-spacing:4px;text-transform:uppercase;color:var(--gold);display:inline-flex;align-items:center;gap:8px;transition:gap .2s;}
+  .dispatch-card:hover .card-cta{gap:14px;}
+  .card-cta::after{content:'→';}
+
+  /* ── FOOTER ── */
+  footer{background:#040810;padding:40px 48px;text-align:center;border-top:1px solid rgba(201,151,10,.1);}
+  footer p{font-family:'Barlow Condensed',sans-serif;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--muted);opacity:.5;}
+  .gw{color:var(--gold);opacity:.8 !important;}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a class="nav-logo" href="https://molaysatrya.id">
+    <div class="nav-seal"><img src="https://molaysatrya.id/MOLAY_Roundel_CustodiServientem_NY.png" alt="MSI"/></div>
+    <div><div class="nav-name">Molay Satrya Indonesia</div><div class="nav-sub">Group</div></div>
+  </a>
+  <div class="nav-links">
+    <a class="nav-link" href="https://molaysatrya.id/#about">About</a>
+    <a class="nav-link" href="https://molaysatrya.id/#ventures">Brands</a>
+    <a class="nav-link active" href="#">The Dispatch</a>
+    <a class="nav-link" href="https://molaysatrya.id/#contact">Contact</a>
+  </div>
+</nav>
+
+<!-- TRI STRIPE -->
+<div class="tri-stripe" style="margin-top:var(--nav-h);"><div class="ts1"></div><div class="ts2"></div><div class="ts3"></div></div>
+
+<!-- HERO -->
+<div class="archive-hero">
+  <div class="archive-label">The MSI Situation Report</div>
+  <div class="archive-title">One Vision.<br><span>Integrated</span> Disciplines.</div>
+  <div class="archive-sub">Field intelligence, brand dispatches, and cultural briefings from across the MSI Group ecosystem. Updated regularly.</div>
+  <div class="archive-stats">
+    <div><div class="stat-num">2</div><div class="stat-label">Published</div></div>
+    <div><div class="stat-num">2</div><div class="stat-label">Total Editions</div></div>
+  </div>
+</div>
+
+<!-- GRID -->
+<div class="archive-body">
+  <div class="archive-grid">
+
+    <!-- EDITION 01 — Urban Jungle -->
+    <a class="dispatch-card" href="MSI_SitRep_ArticlePage_Mockup.html">
+      <img class="card-img" src="https://res.cloudinary.com/dp3v9drdx/image/upload/v1774962703/IMG_4140_vrhrz8.jpg" alt="The Urban Jungle" loading="lazy"/>
+      <div class="card-body">
+        <div class="card-meta">
+          <span class="card-edition">Customer Edition</span>
+          <span class="card-date">31 March 2026</span>
+        </div>
+        <div class="card-theme">Editorial Theme: The Urban Jungle</div>
+        <div class="card-title">The Invisible Operator: The Rise of the Grey Man in the Modern City</div>
+        <div class="card-brands">
+          <span class="card-brand">Molay Tactical</span>
+          <span class="card-brand">Defensa Coffee</span>
+        </div>
+        <div class="card-excerpt">Jakarta does not forgive the conspicuous. The Grey Man doctrine has migrated from SOF tradecraft into the metropolitan mainstream — and the gear has followed.</div>
+        <span class="card-cta">Read the Brief</span>
+      </div>
+    </a>
+
+    <!-- EDITION 02 — Command District -->
+    <a class="dispatch-card" href="MSI_SitRep_2026-04-04_CommandDistrict_ArticlePage.html">
+      <img class="card-img" src="https://res.cloudinary.com/dp3v9drdx/image/upload/v1775290328/hero3_yjrcl6.jpg" alt="The Command District" loading="lazy"/>
+      <div class="card-body">
+        <div class="card-meta">
+          <span class="card-edition">Customer Edition</span>
+          <span class="card-date">04 April 2026</span>
+        </div>
+        <div class="card-theme">Editorial Theme: The Command District</div>
+        <div class="card-title">Satu Distrik. Tiga Disiplin. Mengapa Kebayoran Baru Adalah Rumah MSI Group</div>
+        <div class="card-brands">
+          <span class="card-brand">Molay Tactical</span>
+          <span class="card-brand">Defensa Coffee</span>
+          <span class="card-brand">The Gunslinger's Hop</span>
+        </div>
+        <div class="card-excerpt">Toko Molay Tactical, Defensa Coffee Outpost, dan The Gunslinger's Hop — satu ekosistem disiplin dalam satu kawasan paling berkarakter di Jakarta Selatan.</div>
+        <span class="card-cta">Read the Brief</span>
+      </div>
+    </a>
+
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <p><span class="gw">Molay Satrya Indonesia Group</span> &nbsp;//&nbsp; The MSI Situation Report &nbsp;//&nbsp; <span class="gw">Custodi Servientem</span></p>
+  <p style="margin-top:10px;">© 2026 PT. Molay Satrya Indonesia · <a href="https://molaysatrya.id" style="color:var(--gold);text-decoration:none;">molaysatrya.id</a></p>
+</footer>
+
+</body>
+</html>

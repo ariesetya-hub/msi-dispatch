@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>MSI SitRep — Article Page Mockup</title>
+<!-- Google Analytics GA4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3GDV85S0EL"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-3GDV85S0EL');
+</script>
+<!-- Meta Pixel -->
+<script>
+  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+  n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}
+  (window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '568967256943523');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=568967256943523&ev=PageView&noscript=1"/></noscript>
+<link rel="icon" type="image/png" href="https://molaysatrya.id/MOLAY_Roundel_CustodiServientem_NY.png"/>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500;600;700&family=Barlow:wght@300;400;500;600&family=EB+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet"/>
+<style>
+  :root {
+    --navy:   #080e1c;
+    --navy2:  #0d1828;
+    --navy3:  #0f2040;
+    --gold:   #c9970a;
+    --gold2:  #fab811;
+    --gold3:  #fcd05a;
+    --cream:  #f0ebe0;
+    --text:   #c8bfa8;
+    --brown:  #4a3c28;
+    --nav-h:  80px;
+    --gold2: #fab811;
+    --muted: #8a9bb0;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{background:var(--navy);color:var(--cream);font-family:'Barlow',sans-serif;font-size:16px;line-height:1.7;}
+
+  /* ── NAV ── */
+  nav{position:fixed;top:0;left:0;right:0;height:var(--nav-h);background:rgba(8,14,28,0.92);backdrop-filter:blur(14px);display:flex;align-items:center;justify-content:space-between;padding:0 48px;border-bottom:1px solid rgba(201,151,10,0.2);z-index:100;}
+  .nav-brand{display:flex;align-items:center;gap:14px;}
+  .nav-seal{width:40px;height:40px;border-radius:50%;overflow:hidden;border:1px solid rgba(201,151,10,.4);}
+  .nav-seal img{width:100%;height:100%;object-fit:cover;}
+  .nav-logo{display:flex;align-items:center;gap:14px;text-decoration:none;}
+  .nav-name{font-family:'Barlow Condensed',sans-serif;font-size:14px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--gold2);line-height:1.1;}
+  .nav-sub{font-family:'Barlow Condensed',sans-serif;font-size:8px;letter-spacing:4px;text-transform:uppercase;color:rgba(250,184,17,.5);}
+  .nav-text{font-family:'Barlow Condensed',sans-serif;}
+  .nav-text .name{display:block;font-size:13px;font-weight:700;letter-spacing:3px;color:var(--cream);text-transform:uppercase;}
+  .nav-text .tagline{display:block;font-size:9px;letter-spacing:3px;color:var(--gold);text-transform:uppercase;}
+  .nav-links{display:flex;gap:32px;list-style:none;}
+  .nav-links a{font-family:'Barlow Condensed',sans-serif;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--text);text-decoration:none;transition:color .2s;}
+  .nav-links a:hover,.nav-links a.active{color:var(--gold);}
+
+  /* ── HERO ── */
+  .article-hero{position:relative;height:70vh;min-height:500px;margin-top:var(--nav-h);overflow:hidden;display:flex;align-items:flex-end;}
+  .hero-img{position:absolute;inset:0;background:url('https://res.cloudinary.com/dp3v9drdx/image/upload/v1774962703/IMG_4140_vrhrz8.jpg') center/cover no-repeat;filter:brightness(0.55);}
+  .hero-gradient{position:absolute;inset:0;background:linear-gradient(to top,rgba(8,14,28,1) 0%,rgba(8,14,28,0.5) 40%,transparent 100%);}
+  .tri-stripe{display:flex;height:6px;margin-top:var(--nav-h);}
+  .ts1{flex:4;background:#987F60;} .ts2{flex:2;background:#000;} .ts3{flex:4;background:#7E7E42;}
+  .hero-content{position:relative;z-index:2;padding:0 72px 56px;}
+  .hero-label{font-family:'Barlow Condensed',sans-serif;font-size:11px;letter-spacing:4px;text-transform:uppercase;color:var(--gold);margin-bottom:16px;}
+  .hero-label span{border:1px solid rgba(201,151,10,0.4);padding:4px 12px;margin-right:10px;}
+  .hero-title{font-family:'Barlow Condensed',sans-serif;font-size:clamp(36px,6vw,72px);font-weight:700;line-height:1.05;letter-spacing:1px;color:#fff;max-width:800px;margin-bottom:20px;}
+  .hero-sub{font-family:'Barlow',sans-serif;font-size:15px;color:var(--text);max-width:560px;line-height:1.6;}
+  .hero-meta{display:flex;align-items:center;gap:24px;margin-top:24px;}
+  .hero-meta span{font-family:'Barlow Condensed',sans-serif;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--text);}
+  .hero-meta .dot{width:4px;height:4px;border-radius:50%;background:var(--gold);opacity:.6;}
+
+  /* ── CONTENT ── */
+  .article-wrap{max-width:760px;margin:0 auto;padding:72px 24px;}
+  .section-tag{font-family:'Barlow Condensed',sans-serif;font-size:10px;letter-spacing:4px;text-transform:uppercase;color:var(--gold);margin-bottom:8px;display:flex;align-items:center;gap:10px;}
+  .section-tag::after{content:'';flex:1;height:1px;background:rgba(201,151,10,0.3);}
+  .section-heading{font-family:'Barlow Condensed',sans-serif;font-size:clamp(24px,4vw,40px);font-weight:700;color:var(--cream);line-height:1.15;margin-bottom:28px;}
+  .body-copy{font-family:'EB Garamond',serif;font-size:18px;color:var(--text);line-height:1.8;margin-bottom:22px;text-align:justify;}
+  .pullquote{border-left:3px solid var(--gold);padding:20px 32px;margin:40px 0;background:rgba(201,151,10,0.04);}
+  .pullquote p{font-family:'EB Garamond',serif;font-size:22px;font-style:italic;color:var(--cream);line-height:1.6;}
+  .pullquote cite{display:block;margin-top:12px;font-family:'Barlow Condensed',sans-serif;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--gold);}
+  .divider{height:1px;background:rgba(201,151,10,0.2);margin:56px 0;}
+  .section-spacer{height:56px;}
+
+  /* ── PHOTO BLOCK ── */
+  .photo-block{margin:36px 0;}
+  .photo-block img{width:100%;display:block;max-height:480px;object-fit:cover;filter:brightness(.9);}
+  .photo-caption{font-family:'Barlow Condensed',sans-serif;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--text);margin-top:8px;opacity:.7;}
+
+  /* ── SECONDARY BRAND CARD ── */
+  .brand-card{background:rgba(13,24,40,0.8);border:1px solid rgba(201,151,10,0.2);padding:36px;margin:48px 0;position:relative;overflow:hidden;}
+  .brand-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--gold),transparent);}
+  .brand-card-label{font-family:'Barlow Condensed',sans-serif;font-size:10px;letter-spacing:4px;text-transform:uppercase;color:var(--gold);margin-bottom:12px;}
+  .brand-card-title{font-family:'Barlow Condensed',sans-serif;font-size:28px;font-weight:700;color:var(--cream);margin-bottom:16px;}
+  .brand-card p{font-family:'Barlow',sans-serif;font-size:14px;color:var(--text);line-height:1.7;}
+
+  /* ── COMMAND STATEMENT ── */
+  .command{background:var(--navy2);border-top:1px solid rgba(201,151,10,0.3);border-bottom:1px solid rgba(201,151,10,0.3);padding:56px 48px;margin:56px -48px;text-align:center;}
+  .command p{font-family:'EB Garamond',serif;font-size:clamp(18px,2.5vw,26px);font-style:italic;color:var(--cream);line-height:1.7;max-width:640px;margin:0 auto 24px;}
+  .command .motto{font-family:'Barlow Condensed',sans-serif;font-size:11px;letter-spacing:5px;text-transform:uppercase;color:var(--gold);}
+
+  /* ── CTA ── */
+  .cta-row{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-top:56px;}
+  .btn-primary{display:inline-flex;align-items:center;gap:10px;font-family:'Barlow Condensed',sans-serif;font-size:10px;letter-spacing:4px;text-transform:uppercase;color:var(--gold);border:1px solid rgba(201,151,10,0.5);padding:13px 28px;text-decoration:none;background:rgba(201,151,10,0.06);transition:all .25s;}
+  .btn-primary:hover{background:rgba(201,151,10,0.14);border-color:var(--gold);}
+  .btn-secondary{display:inline-flex;align-items:center;gap:10px;font-family:'Barlow Condensed',sans-serif;font-size:10px;letter-spacing:4px;text-transform:uppercase;color:var(--text);border:1px solid rgba(201,151,10,0.2);padding:13px 28px;text-decoration:none;transition:all .25s;}
+  .btn-secondary:hover{color:var(--cream);border-color:rgba(201,151,10,0.4);}
+
+  /* ── SOURCES ── */
+  .sources{margin-top:56px;padding-top:32px;border-top:1px solid rgba(201,151,10,0.15);}
+  .sources h4{font-family:'Barlow Condensed',sans-serif;font-size:10px;letter-spacing:4px;text-transform:uppercase;color:var(--gold);margin-bottom:16px;}
+  .sources ul{list-style:none;display:flex;flex-direction:column;gap:6px;}
+  .sources li a{font-family:'Barlow',sans-serif;font-size:12px;color:var(--text);text-decoration:none;opacity:.7;transition:opacity .2s;}
+  .sources li a:hover{opacity:1;color:var(--gold);}
+
+  /* ── DISPATCH NAV ── */
+  .dispatch-nav{background:var(--navy2);border-top:1px solid rgba(201,151,10,0.15);border-bottom:1px solid rgba(201,151,10,0.15);padding:20px 72px;display:flex;justify-content:space-between;align-items:center;}
+  .dispatch-nav a{font-family:'Barlow Condensed',sans-serif;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--gold);text-decoration:none;}
+  .dispatch-nav .center{font-family:'Barlow Condensed',sans-serif;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--text);}
+
+  /* ── FOOTER ── */
+  footer{background:#040810;padding:48px;text-align:center;border-top:1px solid rgba(201,151,10,0.1);}
+  footer p{font-family:'Barlow Condensed',sans-serif;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--text);opacity:.5;}
+  footer .gold-word{color:var(--gold);opacity:.8;}
+
+</style>
+</head>
+<body>
+
+
+<!-- NAV -->
+<nav>
+  <a class="nav-logo" href="https://molaysatrya.id">
+    <div class="nav-seal"><img src="https://molaysatrya.id/MOLAY_Roundel_CustodiServientem_NY.png" alt="MSI"/></div>
+    <div><div class="nav-name">Molay Satrya Indonesia</div><div class="nav-sub">Group</div></div>
+  </a>
+  <div class="nav-links">
+    <a class="nav-link" href="https://molaysatrya.id/#about">About</a>
+    <a class="nav-link" href="https://molaysatrya.id/#ventures">Brands</a>
+    <a class="nav-link active" href="index.html">The Dispatch</a>
+    <a class="nav-link" href="https://molaysatrya.id/#contact">Contact</a>
+  </div>
+</nav>
+
+<!-- TRI STRIPE + DISPATCH SUBNAV -->
+<div class="tri-stripe"><div class="ts1"></div><div class="ts2"></div><div class="ts3"></div></div>
+<div class="dispatch-nav">
+  <a href="index.html">← All Dispatches</a>
+  <span class="center">The MSI Situation Report — 31 March 2026</span>
+  <a href="MSI_SitRep_2026-04-04_CommandDistrict_ArticlePage.html">Next Issue →</a>
+</div>
+
+<!-- HERO -->
+<div class="article-hero" style="margin-top:0;">
+  <div class="hero-img"></div>
+  <div class="hero-gradient"></div>
+  <div class="hero-content">
+    <div class="hero-label">
+      <span>Customer Edition</span>
+      <span>31 March 2026</span>
+      <span>Theme: The Urban Jungle</span>
+    </div>
+    <h1 class="hero-title">The Invisible Operator:<br>The Rise of the Grey Man<br>in the Modern City</h1>
+    <p class="hero-sub">Jakarta does not forgive the conspicuous. The ability to move without friction has become a discipline in its own right.</p>
+    <div class="hero-meta">
+      <span>MSI Group Editorial</span>
+      <div class="dot"></div>
+      <span>8 Min Read</span>
+      <div class="dot"></div>
+      <span>Molay Tactical // Defensa Coffee</span>
+    </div>
+  </div>
+</div>
+
+<!-- ARTICLE BODY -->
+<div class="article-wrap">
+
+  <!-- SECTION I: THE INTEL -->
+  <div class="section-tag">Section I &nbsp;//&nbsp; The Intel</div>
+  <h2 class="section-heading">The 70%: Context &amp; Field Intelligence</h2>
+
+  <p class="body-copy">Jakarta does not forgive the conspicuous. In a metropolitan area of 35 million — where the density of Sudirman at rush hour rivals the controlled chaos of a forward operating base — the ability to move without friction has become a discipline in its own right. Security analysts and Special Operations veterans have long referred to it by a single, understated phrase: the Grey Man.</p>
+
+  <p class="body-copy">The Grey Man is not a ghost. He is not invisible. He is, by deliberate design, unremarkable — a figure who passes through a crowd leaving no cognitive trace. The concept, long the preserve of intelligence tradecraft and tier-one field operations, has migrated into the broader metropolitan consciousness.</p>
+
+  <div class="pullquote">
+    <p>"The most dangerous operative in any environment is the one you did not notice was there."</p>
+    <cite>— Field Doctrine, Undisclosed SOF Unit</cite>
+  </div>
+
+  <!-- PHOTO 1: City Landscape -->
+  <div class="photo-block">
+    <img src="https://res.cloudinary.com/dp3v9drdx/image/upload/v1775293237/280352052_ixmej8.webp" alt="Jakarta city landscape" loading="lazy"/>
+    <div class="photo-caption">Jakarta — the urban operational theatre</div>
+  </div>
+
+  <p class="body-copy">Indonesia's elite police units — Brimob, Densus 88, and the Naval Special Warfare Command (Kopaska) — have for years operated on this principle in counter-terrorism and urban reconnaissance roles. What has shifted in 2026 is the adoption of this philosophy by civilian security professionals and corporate close-protection teams.</p>
+
+  <p class="body-copy">The global tactical apparel market reflects this shift with data. Anti-riot and metropolitan security clothing now accounts for nearly 30% of all law enforcement procurement in major cities. More significantly, the private sector has seen a 55% increase in demand for lightweight, mission-ready apparel — gear engineered to disappear into the civilian silhouette.</p>
+
+  <div class="divider"></div>
+
+  <!-- SECTION II: PRIMARY RESPONSE -->
+  <div class="section-tag">Section II &nbsp;//&nbsp; Primary Response &nbsp;//&nbsp; Molay Tactical</div>
+  <h2 class="section-heading">The Intruder Shirt:<br>Hidden Utility in a Civilian Silhouette</h2>
+
+  <!-- PHOTO 2: Intruder Shirt -->
+  <div class="photo-block">
+    <img src="https://res.cloudinary.com/dp3v9drdx/image/upload/v1775293162/IMG_0538_nhxmk3.jpg" alt="Molay Tactical Intruder Shirt" loading="lazy"/>
+    <div class="photo-caption">Molay Tactical — engineered to disappear into the civilian silhouette</div>
+  </div>
+
+  <p class="body-copy">The Molay Tactical Intruder Shirt was not designed for the parade ground. It was engineered in direct response to field feedback from Indonesian Special Operatives who required a garment that could transition, without hesitation, from a briefing room to a tactical corridor — without broadcasting which of those two rooms they had just left.</p>
+
+  <p class="body-copy">The fabric is a ripstop-reinforced technical weave treated for moisture transport in high-humidity tropical environments — a non-negotiable requirement in a climate where the Wet Bulb temperature in urban Jakarta regularly exceeds 32°C. The cut is civilian. The construction is not.</p>
+
+  <div class="pullquote">
+    <p>"The objective of the garment is simple: carry everything you need, show nothing that you carry."</p>
+    <cite>— Molay Tactical, Product Development Brief, 2024</cite>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- SECTION III: SECONDARY DEPLOYMENT -->
+  <div class="section-tag">Section III &nbsp;//&nbsp; Secondary Deployment &nbsp;//&nbsp; Defensa Coffee Outpost</div>
+  <h2 class="section-heading">Fuelling the Urban Commute:<br>The Outpost Between Missions</h2>
+
+  <!-- BRAND CARD: DEFENSA -->
+  <div class="brand-card">
+    <div class="brand-card-label">Secondary Deployment // Defensa Coffee Outpost // Jakarta Selatan</div>
+    <div class="brand-card-title">The Trusted Quartermaster</div>
+    <p>The Grey Man understands that the mission does not begin at the objective. It begins at 0600, with a clear mind and a disciplined start. Defensa Coffee Outpost was established on this same premise — a colonial-modern trade station in the heart of Jakarta Selatan where the currency is not small talk, but good craft and brief respite. The single-origin pour-overs at Defensa are not affectation. They are, like the Intruder Shirt, the product of a specific philosophy: that quality is found in the process, not the packaging.</p>
+  </div>
+
+  <!-- PHOTO 3: Defensa Coffee -->
+  <div class="photo-block">
+    <img src="https://res.cloudinary.com/dp3v9drdx/image/upload/v1774962706/IMG_1751_kdpmwi.jpg" alt="Defensa Coffee Outpost" loading="lazy"/>
+    <div class="photo-caption">Defensa Coffee Outpost — the colonial-modern trade station, Jakarta Selatan</div>
+  </div>
+
+  <!-- COMMAND STATEMENT -->
+  <div class="command">
+    <p>"From the field shirt that carries your gear without announcing it, to the outpost that fuels your discipline before the day demands it — the MSI Group builds the integrated architecture of the prepared man. The Urban Jungle does not wait. Neither do we."</p>
+    <div class="motto">Custodi Servientem</div>
+  </div>
+
+  <!-- CTA -->
+  <div class="cta-row">
+    <a href="https://www.molaytactical.com" class="btn-primary">↗ Procure the Gear</a>
+    <a href="https://www.instagram.com/defensa.co" class="btn-primary">→ Enter the Outpost</a>
+    <a href="index.html" class="btn-secondary">← All Dispatches</a>
+  </div>
+
+  <!-- SOURCES -->
+  <div class="sources">
+    <h4>Intelligence Sources</h4>
+    <ul>
+      <li><a href="https://www.itstactical.com/intellicom/mindset/gray-man-strategies-101-peeling-away-the-thin-veneer-of-society/">ITS Tactical — Grey Man Strategies 101</a></li>
+      <li><a href="https://explore.st-aug.edu/exp/indonesias-elite-police-units-the-silent-shield-behind-national-security">St. Augustine's University — Indonesia's Elite Police Units</a></li>
+      <li><a href="https://www.globenewswire.com/news-release/2026/01/22/3223796/0/en/Ballistic-Protective-Gear-Research-Report-2026-6-25-Bn-Market-Opportunities-Trends-Competitive-Landscape-Strategies-and-Forecasts-2020-2025-2025-2030F-2035F.html">Globe Newswire — Ballistic Protective Gear Report 2026</a></li>
+      <li><a href="https://www.technavio.com/report/tactical-and-outdoor-clothing-market-industry-analysis">Technavio — Tactical Outdoor Clothing Market 2026–2030</a></li>
+    </ul>
+  </div>
+
+</div><!-- /article-wrap -->
+
+<!-- FOOTER -->
+<footer>
+  <p><span class="gold-word">Molay Satrya Indonesia Group</span> &nbsp;//&nbsp; One Vision. Integrated Disciplines. &nbsp;//&nbsp; <span class="gold-word">Custodi Servientem</span></p>
+  <p style="margin-top:12px;">© 2026 PT Molay Satrya Indonesia. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
