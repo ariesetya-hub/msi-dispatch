@@ -99,7 +99,7 @@
   .brand-card p{font-family:'Barlow',sans-serif;font-size:14px;color:var(--text);line-height:1.7;}
 
   /* ── COMMAND STATEMENT ── */
-  .command{background:var(--navy2);border-top:1px solid rgba(201,151,10,0.3);border-bottom:1px solid rgba(201,151,10,0.3);padding:56px 48px;margin:56px -48px;text-align:center;}
+  .command{background:var(--navy2);border-top:1px solid rgba(201,151,10,0.3);border-bottom:1px solid rgba(201,151,10,0.3);padding:56px 48px;margin:56px 0;text-align:center;}
   .command-label{font-family:'Barlow Condensed',sans-serif;font-size:9px;letter-spacing:5px;text-transform:uppercase;color:var(--gold);margin-bottom:24px;opacity:.7;}
   .command p{font-family:'EB Garamond',serif;font-size:clamp(17px,2.5vw,24px);font-style:italic;color:var(--cream);line-height:1.75;max-width:620px;margin:0 auto 32px;}
   .command .motto{font-family:'Barlow Condensed',sans-serif;font-size:12px;letter-spacing:6px;text-transform:uppercase;color:var(--gold);font-weight:700;}
@@ -127,8 +127,27 @@
   footer p{font-family:'Barlow Condensed',sans-serif;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--text);opacity:.5;}
   footer .gold-word{color:var(--gold);opacity:.8;}
 
-  /* ── MOCKUP BADGE ── */
-  .mockup-badge{position:fixed;bottom:24px;right:24px;background:var(--gold);color:var(--navy);font-family:'Barlow Condensed',sans-serif;font-size:10px;letter-spacing:3px;text-transform:uppercase;padding:8px 16px;z-index:999;font-weight:700;}
+  /* ── MOBILE ── */
+  @media(max-width:640px){
+    nav{padding:14px 20px;}
+    .nav-seal{flex-shrink:0;width:36px;height:36px;}
+    .nav-links{display:none;}
+    .dispatch-nav{padding:12px 20px;}
+    .dispatch-nav .center{display:none;}
+    .article-hero{height:56vh;min-height:320px;}
+    .hero-content{padding:0 20px 32px;}
+    .hero-label span{margin-bottom:6px;display:inline-block;}
+    .hero-title{font-size:clamp(26px,7vw,42px);}
+    .hero-sub{font-size:14px;}
+    .hero-meta{gap:10px;}
+    .article-wrap{padding:48px 20px;}
+    .pullquote{padding:16px 20px;margin:28px 0;}
+    .pullquote p{font-size:18px;}
+    .command{padding:40px 20px;margin:40px 0;}
+    .cta-row{flex-direction:column;align-items:stretch;}
+    .btn-primary,.btn-secondary{justify-content:center;}
+    .brand-card{padding:24px 20px;}
+  }
 </style>
 </head>
 <body>
