@@ -32,14 +32,11 @@ MSI News Article Dispatch/
 │   └── MSI_SitRep_2026-03-31_LastWatch_FounderEdition.docx
 │
 ├── index.html                          ← Archive/listing page. Source of truth for status.
-├── MSI_SitRep_ArticlePage_Mockup.html  ← HTML preview: Urban Jungle (published)
-├── MSI_SitRep_2026-04-04_CommandDistrict_ArticlePage.html  ← HTML preview: Command District (published)
-├── GSH_SitRep_ArticlePage_Mockup.html  ← HTML preview: Archipelago Sound (draft — HTML exists but article is draft)
-├── MSI_2026-03-31_UrbanJungle_Carousel.html
-├── MSI_Instagram_Carousel_Mockup.html
-├── GSH_Instagram_Carousel_Mockup.html
-├── THE MSI DISPATCH_ EDITORIAL BRIEF.docx
-└── DISPATCH_GUIDE.md                   ← This file.
+├── ARTICLE_TEMPLATE.html               ← ⚠️ LOCKED. Read this before building any HTML article.
+├── MSI_SitRep_ArticlePage_Mockup.html  ← LIVE: Urban Jungle (published)
+├── MSI_SitRep_2026-04-04_CommandDistrict_ArticlePage.html  ← LIVE: Command District (published)
+├── GSH_SitRep_ArticlePage_Mockup.html  ← DRAFT: Archipelago Sound (not deployed)
+└── DISPATCH_GUIDE.md                   ← This file. Read first, every session.
 ```
 
 ---
@@ -94,12 +91,26 @@ MSI_SitRep_YYYY-MM-DD_[ThemeName]_[EditionType].docx
 3. Update the Published/Draft/Total stats in the archive hero section.
 4. Do NOT build the HTML article page mockup unless specifically requested.
 
+### When building an HTML article page — MANDATORY STEPS:
+> ⚠️ **Never write CSS from scratch. Always start from the locked template.**
+
+1. **Read `ARTICLE_TEMPLATE.html` first** — the entire file, before writing a single line of code.
+2. **Copy the full CSS block** from `ARTICLE_TEMPLATE.html` exactly as-is into the new file. Do not modify, reorder, or rewrite any CSS rule.
+3. **Copy the locked HTML sections** — nav, tri-stripe div, footer — exactly from the template. These are marked `LOCKED — DO NOT MODIFY`.
+4. Fill in only the content placeholders marked `← EDIT THIS`.
+5. File naming: `MSI_SitRep_YYYY-MM-DD_[ThemeName]_ArticlePage.html`
+6. All images must use Cloudinary URLs — no local image paths.
+7. Subnav Previous/Next: link to the correct adjacent article filename. Use `class="disabled"` if no adjacent article exists yet.
+
+**Why this matters:** The CSS took many sessions to stabilise. Rewriting it from memory introduces layout drift, missing mobile rules, and broken roundel display. The template is the single source of truth — trust it completely.
+
 ### When publishing a draft (Arie Setya authorises):
 1. Move docx from `drafts/` → `published/`.
 2. In `index.html`: change `class="edition-card draft"` → `class="edition-card clickable"`, change badge from `draft` to `published`, move card above the Drafts divider.
 3. Update the stats (Published count +1, Draft count -1).
-4. Build HTML article page mockup if requested.
-5. Remind Arie to run `git add . && git commit -m "Publish: [article name]" && git push`.
+4. Build HTML article page — follow **"When building an HTML article page"** steps above.
+5. Add the new article card to `molaysatrya_website/index.html` dispatch grid (hardcoded HTML, no JS fetch).
+6. Remind Arie to upload changed files to GitHub via browser or Terminal.
 
 ---
 
@@ -132,4 +143,4 @@ Full brand voice details → `CLAUDE.md` in parent `.claude` directory.
 
 ---
 
-*Last updated: 04 April 2026 by Claude (Cowork session) — Command District HTML article page built and linked.*
+*Last updated: 04 April 2026 by Claude (Cowork session) — Mobile responsive fixes applied to both articles. ARTICLE_TEMPLATE.html locked with full mobile CSS. Dispatch cards on molaysatrya.id homepage converted from JS-fetch to hardcoded HTML.*
